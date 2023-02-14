@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_clase_4/Xylophone.dart';
 
 class Bongos extends StatelessWidget {
   const Bongos({super.key});
@@ -16,6 +17,7 @@ class Bongos extends StatelessWidget {
 
     //Pintamos en pantalla el instrumento musical
     return Scaffold(
+      backgroundColor: Colors.black,
       body: SafeArea(
         child: Container(
           height: double.infinity,
@@ -88,11 +90,20 @@ class Bongos extends StatelessWidget {
                     ),
                   ],
                 ),
-                //Este bloque lo ponemos para que el anterior no quede pegado al borde de la pantalla
-                //así queda centrado entre el botón y este bloque.
                 Container(
-                  color: Colors.indigo,
-                  child: const Text(""),
+                  height: double.infinity,
+                  color: Colors.black,
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Xylophone(),
+                        ),
+                      );
+                    },
+                    child: const Icon(Icons.arrow_forward),
+                  ),
                 ),
               ],
             ),

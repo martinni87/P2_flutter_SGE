@@ -54,7 +54,8 @@ class Presentation extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const Xylophone()),
+                        builder: (context) => const Xylophone(),
+                      ),
                     );
                   },
                 ),
@@ -69,7 +70,9 @@ class Presentation extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const Guitar()),
+                      MaterialPageRoute(
+                        builder: (context) => const Guitar(),
+                      ),
                     );
                   },
                 ),
@@ -84,7 +87,9 @@ class Presentation extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const Bongos()),
+                      MaterialPageRoute(
+                        builder: (context) => const Bongos(),
+                      ),
                     );
                   },
                 ),

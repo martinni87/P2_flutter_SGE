@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_clase_4/Guitar.dart';
 import 'package:flutter_clase_4/XylophoneNotes.dart';
 
 class Xylophone extends StatelessWidget {
@@ -60,6 +61,17 @@ class Xylophone extends StatelessWidget {
             buildKey(6),
             buildKey(7),
             buildKey(8),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Guitar(),
+                  ),
+                );
+              },
+              child: const Icon(Icons.arrow_forward),
+            ),
           ],
         ),
       ),
