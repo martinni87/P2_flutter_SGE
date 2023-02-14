@@ -17,31 +17,30 @@ class Bongos extends StatelessWidget {
     //Pintamos en pantalla el instrumento musical
     return Scaffold(
       body: SafeArea(
-        child: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                height: double.infinity,
-                color: Colors.black,
-                child: TextButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  child: const Icon(Icons.arrow_back),
-                ),
-              ),
-              Container(
-                height: double.infinity,
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("images/background2.jpg"),
-                    fit: BoxFit.cover,
-                    colorFilter:
-                        ColorFilter.mode(Colors.lightBlue, BlendMode.screen),
+        child: Container(
+          height: double.infinity,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("images/background2.jpg"),
+              fit: BoxFit.cover,
+              colorFilter: ColorFilter.mode(Colors.lightBlue, BlendMode.screen),
+            ),
+          ),
+          child: Center(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  height: double.infinity,
+                  color: Colors.black,
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: const Icon(Icons.arrow_back),
                   ),
                 ),
-                child: Row(
+                Row(
                   children: [
                     Container(
                       margin: const EdgeInsets.all(40),
@@ -89,14 +88,14 @@ class Bongos extends StatelessWidget {
                     ),
                   ],
                 ),
-              ),
-              //Este bloque lo ponemos para que el anterior no quede pegado al borde de la pantalla
-              //así queda centrado entre el botón y este bloque.
-              Container(
-                color: Colors.indigo,
-                child: const Text(""),
-              ),
-            ],
+                //Este bloque lo ponemos para que el anterior no quede pegado al borde de la pantalla
+                //así queda centrado entre el botón y este bloque.
+                Container(
+                  color: Colors.indigo,
+                  child: const Text(""),
+                ),
+              ],
+            ),
           ),
         ),
       ),
