@@ -1,16 +1,12 @@
-# flutter_clase_4
+# Última práctica Flutter para SGE 2º DAM.
 
-Flutter clase 4
+Basada en clase 4
 
-## Getting Started
+## Explicación
 
-This project is a starting point for a Flutter application.
+Se trata de una aplicación con una activity de entrada en la que se visualizan 3 iconos, uno para cada instrumento disponible:
+* Xilófono
+* Guitarra
+* Bongos
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Los instrumentos funcionan con sonidos cargados en Assets, 1 octava completa en el caso del xilófono, sonidos de cuerdas abiertas para la guitarra (pendiente en actualizaciones futuras montar acordes completos o sacar sonidos según el traste de pulsación), dos sonidos grave y agudo para los bongos.
